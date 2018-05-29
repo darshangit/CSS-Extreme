@@ -30,18 +30,22 @@ section, h1 {
    top: 25%;
    width: 75px;
    height: 75px;
+   transition: transform 5s, background-color 2s 1s;
 }
 
 #scale .square div:hover {
-
+  background-color: blue;
+  transform: scale(2,2)
 }
 
 /* The rotate() method */
 #rotate .square {
   background-color: tomato;
+  transition: transform 24s;
 }
 
-#rotate .square:hover {   
+#rotate .square:hover {  
+  transform: rotate(-360deg) 
 
 }
 
@@ -49,9 +53,11 @@ section, h1 {
 /* The translate() method */
 #translate .square {
   background-color: orange;
-
+  transition: transform 4s ease-in-out, background-color 4s 1s;
+  
 }
 
 #translate .square:hover { 
-
+  background-color: pink;
+  transform: translateX(900px) rotate(360deg);
 }
